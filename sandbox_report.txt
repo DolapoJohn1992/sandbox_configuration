@@ -1,0 +1,7 @@
+Sandbox Configuration and Forensic Report
+
+QUESTION 1: Based on your ping test, is the air-gap active? How do you know?
+ANSWER: Yes, the air-gap is active. The ping test to google.com failed with a "temporary failure in name resolution" (or "Network is unreachable"), which confirms the VM is isolated and has no route to the internet.
+
+QUESTION 2: Why is "Bridged Mode" a massive security risk for malware analysis?
+ANSWER: Bridged mode allows the VM to act as a full member of my physical home network with its own IP address. If I were to execute malware in this mode, it could move laterally to infect my MacBook, my router, or any other devices connected to my Wi-Fi.
